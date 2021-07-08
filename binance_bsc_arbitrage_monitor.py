@@ -21,7 +21,7 @@ def sell_to_binance(pair):     #function returns average selling price
             break
     return round(avg,6)
 
-def buy_from_binance(pair):     #function returns average selling price
+def buy_from_binance(pair):     #function returns average buying price
     cc = pair
     binance_api = f'https://api.binance.com/api/v3/depth?symbol={cc}'
     asks = requests.get(binance_api).json()['asks'] #Uses sell orderbook

@@ -2,7 +2,6 @@ import websocket, json, requests,math, logging,os,time
 from web3 import Web3
 # Test phase with 10k
 web3 = Web3(Web3.HTTPProvider(os.environ["ETH_PROVIDER_URL"]))
-usdt_api = 'https://api.1inch.exchange/v3.0/56/quote?fromTokenAddress=0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d&toTokenAddress=0x55d398326f99059ff775485246999027b3197955&amount=10000000000000000000000'
 
 usdt = '0x55d398326f99059ff775485246999027b3197955'
 
